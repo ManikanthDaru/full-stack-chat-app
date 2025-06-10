@@ -1,6 +1,7 @@
 import User from "../models/user.model.js";
 import Message from "../models/message.model.js";
-import { getReceiverSocketId,io } from "../config/socket.js";
+import { getReceiverSocketId, io } from "../config/socket.js";
+import cloudinary from "../config/cloudinary.js";
 export const getUsersForSidebar = async (req, res) => {
   try {
       // as the route is protected we can get the userId from the request object
